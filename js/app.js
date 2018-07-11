@@ -62,3 +62,28 @@ if (balloon.toLowerCase() === 'y' || balloon.toLowerCase() === 'yes') {
     alert('balloon answer', alertMessage);
 }
 console.log('balloon answer',balloon);
+
+//guessing game
+
+alert('Ready for more? I\'ve got a guessing game for you! You\'ve got 4 chances to guess the right number to this next question. The answer is between 1-20.');
+
+var myCruises = 10;
+var userGuess = prompt('How many cruises have I been on?');
+var attempts = 4;
+
+for (var i = 0; i < userGuess.length; i++) {
+    if (userGuess.length === myCruises) {
+        alert('You guessed right! I have been on 10 cruises!!');
+        break;
+    } else if (userGuess.length < myCruises) {
+        alert('You guessed wrong! Try again');
+    } else {
+
+    }
+
+    attempts = attempts -1;
+}
+
+if (attempts == 0) {
+    alert('No more attempts left. The answer was' + myCruises + ' cruises!');
+}
