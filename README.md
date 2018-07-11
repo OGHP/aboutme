@@ -1,7 +1,7 @@
-# aboutme
-This is a repository with information about me in the form of a "yes" or "no" quiz for users to guess the answers to.
+# About Me
+This is a repository for a simple JavaScript quiz that has questions about me with "yes" or "no" prompts for the user.
 
-# Built With
+## Built With
 HTML
 CSS
 JavaScript
