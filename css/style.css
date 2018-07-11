@@ -1,24 +1,62 @@
 body {
     background-color: wheat;
+    padding-left: .5em;
 }
-#message {
+#intro {
     color: teal;
     font-family: fantasy;
     font-size: 1.5em;
-    padding-left: .2em;
     padding-top: 2em;
     width: 100%;
 }
 
-#image {
-    border-radius: 2;
-    padding-left: 2em;
-    padding-top: 2em;
+#top-ten {
+    line-height: 1.5em;
+}
+ol {
+    margin-left: 2em;
 }
 
-#footer {
+#aboutme-facts {
+     margin-top: 2em;
+     line-height: 2em;
+}
+
+#aboutme-list {
+    margin-bottom: 2em;
+}
+
+/* #aboutme-list li {
+    list-style: circle
+} */
+
+#image {
+    margin-top: 2em;
+}
+
+#nav-message {
     color: tomato;
     display: inline-block;
     font-family: fantasy;
-    font-size: 2em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#nav-link {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 1em;
+    padding-right: 1em;
+}
+
+#footer {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3em;
+}
 }

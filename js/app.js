@@ -31,9 +31,9 @@ console.log('children answer', children);
 var tattoos = prompt('Do I have more than 2 tattoos?');
 
 if (tattoos.toLowerCase() === 'y' || tattoos.toLowerCase() === 'yes') {
-    alert('Yepper, I\'ll be full of regrets when I\'m 70! Not really, I love tats, I only have 5 now so I\'m eager to get a few more.');
+    alert('Yepper, I\'ll be full of regrets when I\'m 70! Not really, I love tats, I only have 6 now so I\'m eager to get a few more.');
 } else if (tattoos.toLowerCase() === 'n' || tattoos.toLowerCase() === 'no') {
-    alert('Aw snap! You\'re wrong! I have more than 2 tattoos, in fact...I have 5!');
+    alert('Aw snap! You\'re wrong! I have more than 2 tattoos, in fact...I have 6!');
 } else {
     alert(alertMessage);
 }
