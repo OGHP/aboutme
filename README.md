@@ -14,3 +14,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ### Acknowledgments
 High five to my Lab 2 table mates for talking through how to set up our projects together!
+
+### Contributors Driver: Peter Murphy. Heather Palmer: Navigator.
