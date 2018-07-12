@@ -7,7 +7,7 @@ var alertMessage = 'Aww rats, it\'s a yes or no question! Now you\'ll never know
 var hometown = prompt('Is my hometown in NY?');
 
 if (hometown.toLowerCase() === 'y' || hometown.toLowerCase() === 'yes') {
-    alert('You are correct! My hometown is Binghamton, NY just about an hour south of Albany and 3 hours north of the city. Home of the chicken spiedie, Google it! However, no more chicken spiedies for me...I went vegan a year ago so just a tofu spiedie for me now!');
+    alert('You are correct! My hometown is Binghamton, NY just about an hour south of Albany and 3 hours north of the city. Home of the chicken spiedie, Google it! However, no more chicken spiedies for me...I went vegan a year ago so just a tofu spiedies for me now!');
 } else if (hometown.toLowerCase() === 'n' || hometown.toLowerCase() === 'no') {
     alert('Boo, can\'t you pickup on my NY accent? JK, I don\'t think I have an accent though some people have picked up on it before.');
 } else {
@@ -19,7 +19,7 @@ console.log('hometown answer', hometown);
 var children = prompt('Do I have 2 children?');
 
 if (children.toLowerCase() === 'y' || children.toLowerCase() === 'yes') {
-    alert('Fail!! You are so wrong! I just have one bambino but he\'s not really a kid anymore, he just turned 24! Yep, I have a kid about the same age age as the average student in our 201 class!');
+    alert('Fail!! You are so wrong! I just have one bambino but he\'s not really a kid anymore, he just turned 24! Yep, I have a kid about the same age as the average student in our 201 class!');
 } else if (children.toLowerCase() === 'n' || children.toLowerCase() === 'no') {
     alert('Nailed it! I just have one bambino but he\'s not really a kid anymore, he just turned 24! Yep, I have a kid about the same age age as the average student in our 201 class!');
 } else {
@@ -65,25 +65,30 @@ console.log('balloon answer',balloon);
 
 //guessing game
 
-alert('Ready for more? I\'ve got a guessing game for you! You\'ve got 4 chances to guess the right number to this next question. The answer is between 1-20.');
+alert('Ready for more? I\'ve got a guessing game for you! You\'ve got 4 chances to guess the right number to this next question.');
 
 var myCruises = 10;
-var userGuess = prompt('How many cruises have I been on?');
-var attempts = 4;
+var attempts = 0;
 
-for (var i = 0; i < userGuess.length; i++) {
-    if (userGuess.length === myCruises) {
+while (attempts < 4) {
+    var userGuess = Number(prompt('How many cruises have I been on?'));
+
+    if (userGuess === myCruises) {
         alert('You guessed right! I have been on 10 cruises!!');
+        console.log(userGuess);
         break;
-    } else if (userGuess.length < myCruises) {
-        alert('You guessed wrong! Try again');
+    } else if (userGuess < myCruises) {
+        alert('You guessed too low!');
+    } else if (userGuess > myCruises) {
+        alert('You\'ve guessed to high!');
     } else {
-
+        alert('You didn\'t take a guess');
     }
+    console.log('number of cruises that the user guessed',userGuess);
 
-    attempts = attempts -1;
-}
-
-if (attempts == 0) {
-    alert('No more attempts left. The answer was' + myCruises + ' cruises!');
+    if (attempts === 3) {
+        alert('Sorry! No more attempts left. The correct answer was that I have been on ' + myCruises + ' cruises!');
+        break;
+    }
+    attempts++;
 }
