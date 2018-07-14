@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: wheat;
     padding-left: .5em;
 }
@@ -25,10 +25,6 @@ ol {
 #aboutme-list {
     margin-bottom: 2em;
 }
-
-/* #aboutme-list li {
-    list-style: circle
-} */
 
 #image {
     margin-top: 2em;
@@ -59,4 +55,17 @@ a {
     text-align: center;
     margin-top: 3em;
 }
-}
+ */
+
+
+
+
+
+
+
+
+ body {
+     margin: 0 5px;
+     color: #A19A96;
+     color: black;
+ }
