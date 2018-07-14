@@ -109,35 +109,33 @@ function arrayChecker(){
 
     // outer loop is for tracking the number of attempts
     for (var i = 0; i < tries; i++) {
-        var userStateGuess = prompt('Using state abbreviations... Can you guess a state that I have lived in besides Washington? HINT: think East Coast!');
 
         //inner loop is for looping over the myStates array
         for (var j = 0; j < myStates.length; j++) {
+            var userStateGuess = prompt('Using state abbreviations... Can you guess a state that I have lived in besides Washington? HINT: think East Coast!');
 
-            if (userStateGuess === 'NY' || userStateGuess === 'PA') {
+            if (userStateGuess.toUpperCase() === 'NY' || userStateGuess.toUpperCase() === 'PA') {
                 alert('You got it right! I have lived in ' + userStateGuess + '! The correct answers were NY and PA');
                 console.log('this is the state guessed by the user', userStateGuess);
                 correctStateAnswer = true;
                 break;
-            } else if (userStateGuess !== 'NY' || userStateGuess !== 'PA') {
+            } else if (userStateGuess.toUpperCase() !== 'NY' || userStateGuess.toUpperCase() !== 'PA') {
                 alert('Sorry, you guessed ' + userStateGuess + ' and I have never lived there.');
                 console.log('this is the state guessed by the user', userStateGuess);
-                //this is a temporary break
                 break;
             } else {
             //still needs improvement here
                 alert('Looks like you aren\'t using state abbrevations!');
-                console.log('testing to see if this appears',tries);
-                //this is a temporary break
                 break;
             }
         }
 
-        if (tries === 5) {
-            alert('Times up! No more tries left. The correct answer was that I have lived in ' + myStates[0] + ' and ' + myStates[1] + '!');
+        tries++;
+
+        if (i === 5) {
+            alert('Times up! No more attempts left. The correct answer was that I have lived in ' + myStates[0] + ' and ' + myStates[1] + '!');
             break;
         }
-        tries++;
 
         if (correctStateAnswer === true) {
             break;
