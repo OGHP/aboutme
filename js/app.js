@@ -1,6 +1,8 @@
 // guessing game about me that involves 5 yes / no questions
 'use strict';
 
+alert('Welcome to my quiz! Lets see how well you know me when you answer these 5 yes or no questions. Hit the "ok" button to start. Good luck!');
+
 function firstQuestions(){
     var alertMessage = 'Aww rats, it\'s a yes or no question! Now you\'ll never know the answer..on to the next question!';
 
@@ -8,7 +10,7 @@ function firstQuestions(){
     var hometown = prompt('Is my hometown in NY?');
 
     if (hometown.toLowerCase() === 'y' || hometown.toLowerCase() === 'yes') {
-        alert('You are correct! My hometown is Binghamton, NY just about an hour south of Albany and 3 hours north of the city. Home of the chicken spiedie, Google it! However, no more chicken spiedies for me...I went vegan a year ago so just a tofu spiedies for me now!');
+        alert('You are correct! My hometown is Binghamton, NY just about an hour south of Albany and 3 hours north of the city. Home of the chicken spiedie, Google it! However, no more chicken spiedies for me...I went vegan a year ago so just tofu spiedies for me now!');
     } else if (hometown.toLowerCase() === 'n' || hometown.toLowerCase() === 'no') {
         alert('Boo, can\'t you pickup on my NY accent? JK, I don\'t think I have an accent though some people have picked up on it before.');
     } else {
@@ -44,7 +46,7 @@ function firstQuestions(){
     var zombie = prompt('Do you think I\'ve been on Rob Zombie\'s tour bus?');
 
     if (zombie.toLowerCase() === 'y' || zombie.toLowerCase() === 'yes') {
-        alert('Haa! What kind of girl do you think I am?? A pretty cool one, right! Yes, I have been on Rob Zombie\'s tour bus! He stayed at the hotel I was working at - he introduced me to his super sweet girlfriend and gave me a quick peek into the bus. It was gorgeous inside and there was a big fat cat chilling on the couch!');
+        alert('Haa! What kind of girl do you think I am?? A pretty cool one, right? Yes, I have been on Rob Zombie\'s tour bus! He stayed at the hotel I was working at - he introduced me to his super sweet girlfriend and gave me a quick peek into the bus. It was gorgeous inside and there was a big fat cat chilling on the couch!');
     } else if (zombie.toLowerCase() === 'n' || zombie.toLowerCase() === 'no') {
         alert('Are you familiar with Rob Zombie? He\'s super freaky looking but CRAZY kind and let me get a peek of his tour bus when he stayed at the hotel I was working at! Sorry you got this one wrong');
     } else {
