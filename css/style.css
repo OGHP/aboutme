@@ -1,110 +1,44 @@
-/* body {
-    background-color: wheat;
-    padding-left: .5em;
-}
-#intro {
-    color: teal;
-    font-family: fantasy;
-    font-size: 1.5em;
-    padding-top: 2em;
-    width: 100%;
-}
-
-#top-ten {
-    line-height: 1.5em;
-}
-ol {
-    margin-left: 2em;
-}
-
-#aboutme-facts {
-     margin-top: 2em;
-     line-height: 2em;
-}
-
-#aboutme-list {
-    margin-bottom: 2em;
-}
-
-#image {
-    margin-top: 2em;
-}
-
-#nav-message {
-    color: tomato;
-    display: inline-block;
-    font-family: fantasy;
-    font-size: 1em;
-    margin-bottom: 1em;
-    margin-top: 2em;
-}
-
-#nav-link {
-    display: inline;
-}
-
-a {
-    text-decoration: none;
-    font-family: fantasy;
-    font-size: 1em;
-    padding-right: 1em;
-}
-
-#footer {
-    font-size: 13px;
-    text-align: center;
-    margin-top: 3em;
-}
- */
-
-
-
-
-
-
-
-
 body {
-    margin: 0 50px;
     background-color: ghostwhite;
     color: black;
+    margin: 0 50px;
  }
 
  header {
-    margin-top: 2em;
     background-color: #B7CD4E;
-    font-family: fantasy;
     border: 3px solid #15216E;
-    font-size: 20px;
+    font-family: fantasy;
+    margin-top: 2em;
  }
 
  #heather-image {
-    transform: rotate(-10deg);
-    height: 155px;
-    vertical-align: middle;
     border: 3px solid #9E209E;
+    height: 155px;
     padding: 3px;
+    transform: rotate(-10deg);
+    vertical-align: middle;
  }
 
  h1 {
     display: inline;
     font-size: 60px;
-    padding: 2.5em;
+    padding: .5em 2.5em;
  }
 
  #nav {
-     display: inline-block;
+    display: inline-block;
+    line-height: 30px;
+}
+
+#site-nav {
+    font-family: fantasy;
  }
 
-.right {
-    transform: rotate(-45deg);
- }
-
- a {
+a {
     text-decoration: none;
- }
+}
 
- main {
+main {
     margin-top: 1em;
 }
 
@@ -119,48 +53,52 @@ h2 {
 
 #about-me, #fav-places {
     background-color: #893B89;
-    display: inline-block;
-    padding: 1em;
-    height: 300px;
-    vertical-align: middle;
-    color: white;
     border: 3px solid #15216E;
+    color: white;
+    display: inline-block;
+    height: 300px;
+    padding: 1em;
+    vertical-align: middle;
 
 }
- #about-me {
-    width: 60%;
+#about-me {
     line-height: 2em;
- }
+    width: 60%;
+}
 
- #fav-places {
-    width: 33%;
+#fav-places {
     line-height: 1.1em;
- }
+    width: 33%;
+}
 
- #pnw-logo {
-    transform: rotate(14deg);
+#pnw-logo {
     height: 5em;
     margin-left: 50%;
     padding-right: 1000px;
+    transform: rotate(14deg);
     width: 10em;
- }
+}
 
- #connect {
+#connect {
+    background-color: #B7CD4E;
+    border: 3px solid #15216E;
     font-size: 15px;
-    text-align: center;
     line-height: 2em;
     margin-top: 2em;
     padding: 1em;
-    background-color: #B7CD4E;
-    border: 3px solid #15216E;
+    text-align: center;
 }
 
- #footer {
+.connect-links {
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+#footer {
+    border: 3px solid #15216E;
     font-size: 13px;
-    text-align: center;
     margin-top: 3em;
-    /* background-color: #B7CD4E; */
-    border: 3px sol÷id #15216E;
+    text-align: center;
 }
 
 
