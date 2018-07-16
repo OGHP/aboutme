@@ -30,8 +30,20 @@ body {
     line-height: 30px;
 }
 
-#site-nav {
+ul, ol {
+    padding-left: 1em;
+}
+
+ul {
+    list-style: circle;
+}
+
+ol {
+    list-style: decimal;
+}
+.site-nav {
     font-family: fantasy;
+    list-style: none;
  }
 
 a {
@@ -44,7 +56,7 @@ main {
 
 li {
     font-family: "Gill Sans", sans-serif;
-    font-size: 18px
+    font-size: 18px;
 }
 
 h2 {
