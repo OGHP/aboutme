@@ -93,8 +93,11 @@ function balloonQuestion() {
 }
 balloonQuestion();
 
-//in progress
-alert('TOTAL SCORE');
+//in progress - get this working and then incorporate the questions below (as those appear to be more challenging)
+function getFinalScore() {
+    return 'You got ' + totalScore + ' correct, out of 5';
+};
+getFinalScore();
 
 
 // guessing game
