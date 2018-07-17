@@ -3,6 +3,9 @@
 
 alert('Welcome to my quiz! Lets see how well you know me when you answer these 5 yes or no questions. Hit the "ok" button to start. Good luck!');
 
+//create variable to store/show total score of entire game. Add 'totalScore++' to correct answers and 'totalScore--' to incorrect answers. My issues: How do you get this to display and how to you apply it to the questions that allow for several guesses?
+var totalScore= 0;
+
 var alertMessage = 'Aww rats, it\'s a yes or no question! Now you\'ll never know the answer..on to the next question!';
 
 function hometownQuestion() {
@@ -11,8 +14,10 @@ function hometownQuestion() {
 
     if (hometown.toLowerCase() === 'y' || hometown.toLowerCase() === 'yes') {
         alert('You are correct! My hometown is Binghamton, NY just about an hour south of Albany and 3 hours north of the city. Home of the chicken spiedie, Google it! However, no more chicken spiedies for me...I went vegan a year ago so just tofu spiedies for me now!');
+        totalScore++;
     } else if (hometown.toLowerCase() === 'n' || hometown.toLowerCase() === 'no') {
         alert('Boo, can\'t you pickup on my NY accent? JK, I don\'t think I have an accent though some people have picked up on it before.');
+        totalScore--;
     } else {
         alert(alertMessage);
     }
@@ -26,8 +31,10 @@ function childQuestion() {
 
     if (children.toLowerCase() === 'y' || children.toLowerCase() === 'yes') {
         alert('Fail!! You are so wrong! I just have one bambino but he\'s not really a kid anymore, he just turned 24! Yep, I have a kid about the same age as the average student in our 201 class!');
+        totalScore++;
     } else if (children.toLowerCase() === 'n' || children.toLowerCase() === 'no') {
         alert('Nailed it! I just have one bambino but he\'s not really a kid anymore, he just turned 24! Yep, I have a kid about the same age age as the average student in our 201 class!');
+        totalScore--;
     } else {
         alert(alertMessage);
     }
@@ -41,8 +48,10 @@ function tattooQuestion() {
 
     if (tattoos.toLowerCase() === 'y' || tattoos.toLowerCase() === 'yes') {
         alert('Yepper, I\'ll be full of regrets when I\'m 70! Not really, I love tats, I only have 6 now so I\'m eager to get a few more.');
+        totalScore++;
     } else if (tattoos.toLowerCase() === 'n' || tattoos.toLowerCase() === 'no') {
         alert('Aw snap! You\'re wrong! I have more than 2 tattoos, in fact...I have 6!');
+        totalScore--;
     } else {
         alert(alertMessage);
     }
@@ -56,8 +65,10 @@ function zombieQuestion() {
 
     if (zombie.toLowerCase() === 'y' || zombie.toLowerCase() === 'yes') {
         alert('Haa! What kind of girl do you think I am?? A pretty cool one, right? Yes, I have been on Rob Zombie\'s tour bus! He stayed at the hotel I was working at - he introduced me to his super sweet girlfriend and gave me a quick peek into the bus. It was gorgeous inside and there was a big fat cat chilling on the couch!');
+        totalScore++;
     } else if (zombie.toLowerCase() === 'n' || zombie.toLowerCase() === 'no') {
         alert('Are you familiar with Rob Zombie? He\'s super freaky looking but CRAZY kind and let me get a peek of his tour bus when he stayed at the hotel I was working at! Sorry you got this one wrong');
+        totalScore--;
     } else {
         alert(alertMessage);
     }
@@ -71,14 +82,20 @@ function balloonQuestion() {
 
     if (balloon.toLowerCase() === 'y' || balloon.toLowerCase() === 'yes') {
         alert('You bet I have! It was at a festival in my hometown and my boss gave me the 2 tickets he won in a raffle. It was a weirdly quiet experience but super cool seeing the town so tiny below me!');
+        totalScore++;
     } else if (balloon.toLowerCase() === 'n' || balloon.toLowerCase() === 'no') {
         alert('I\'ve done a lot of cool things in my life and this was one of them! Sorry, you guessed wrong here');
+        totalScore--;
     } else {
         alert('balloon answer', alertMessage);
     }
     console.log('balloon answer',balloon);
 }
 balloonQuestion();
+
+//in progress
+alert('TOTAL SCORE');
+
 
 // guessing game
 function cruises(){
