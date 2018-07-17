@@ -101,6 +101,10 @@ h2 {
     text-align: center;
 }
 
+#connect ul {
+    list-style: none;
+}
+
 .connect-links {
     font-family: fantasy;
     font-size: 25px;

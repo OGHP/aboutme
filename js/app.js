@@ -3,7 +3,6 @@
 
 alert('Welcome to my quiz! Lets see how well you know me when you answer these 5 yes or no questions. Hit the "ok" button to start. Good luck!');
 
-//create variable to store/show total score of entire game. Add 'totalScore++' to correct answers and 'totalScore--' to incorrect answers. My issues: How do you get this to display and how to you apply it to the questions that allow for several guesses?
 var totalScore= 0;
 
 var alertMessage = 'Aww rats, it\'s a yes or no question! Now you\'ll never know the answer..on to the next question!';
@@ -17,7 +16,6 @@ function hometownQuestion() {
         totalScore++;
     } else if (hometown.toLowerCase() === 'n' || hometown.toLowerCase() === 'no') {
         alert('Boo, can\'t you pickup on my NY accent? JK, I don\'t think I have an accent though some people have picked up on it before.');
-        totalScore--;
     } else {
         alert(alertMessage);
     }
@@ -31,10 +29,9 @@ function childQuestion() {
 
     if (children.toLowerCase() === 'y' || children.toLowerCase() === 'yes') {
         alert('Fail!! You are so wrong! I just have one bambino but he\'s not really a kid anymore, he just turned 24! Yep, I have a kid about the same age as the average student in our 201 class!');
-        totalScore++;
     } else if (children.toLowerCase() === 'n' || children.toLowerCase() === 'no') {
         alert('Nailed it! I just have one bambino but he\'s not really a kid anymore, he just turned 24! Yep, I have a kid about the same age age as the average student in our 201 class!');
-        totalScore--;
+        totalScore++;
     } else {
         alert(alertMessage);
     }
@@ -51,7 +48,6 @@ function tattooQuestion() {
         totalScore++;
     } else if (tattoos.toLowerCase() === 'n' || tattoos.toLowerCase() === 'no') {
         alert('Aw snap! You\'re wrong! I have more than 2 tattoos, in fact...I have 6!');
-        totalScore--;
     } else {
         alert(alertMessage);
     }
@@ -68,7 +64,6 @@ function zombieQuestion() {
         totalScore++;
     } else if (zombie.toLowerCase() === 'n' || zombie.toLowerCase() === 'no') {
         alert('Are you familiar with Rob Zombie? He\'s super freaky looking but CRAZY kind and let me get a peek of his tour bus when he stayed at the hotel I was working at! Sorry you got this one wrong');
-        totalScore--;
     } else {
         alert(alertMessage);
     }
@@ -85,7 +80,6 @@ function balloonQuestion() {
         totalScore++;
     } else if (balloon.toLowerCase() === 'n' || balloon.toLowerCase() === 'no') {
         alert('I\'ve done a lot of cool things in my life and this was one of them! Sorry, you guessed wrong here');
-        totalScore--;
     } else {
         alert('balloon answer', alertMessage);
     }
@@ -114,6 +108,7 @@ function cruises(){
         if (userGuess === myCruises) {
             alert('You guessed right! I have been on 10 cruises!!');
             console.log(userGuess);
+            totalScore++;
             break;
         } else if (userGuess < myCruises) {
             alert('You guessed too low!');
@@ -149,8 +144,10 @@ function arrayChecker(){
 
             if (userStateGuess.toUpperCase() === myStates[j]) {
                 alert('You got it right! I have lived in ' + userStateGuess + '! The correct answers were NY and PA');
-                console.log('this is the state guessed by the user', userStateGuess);
                 correctStateAnswer = true;
+                console.log('this is the state guessed by the user', userStateGuess);
+                totalScore++;
+                console.log('users total score', totalScore);
                 break;
             } else if (userStateGuess.toUpperCase() !== myStates[j]) {
                 alert('Sorry, you guessed ' + userStateGuess + ' and I have never lived there.');
@@ -172,3 +169,5 @@ function arrayChecker(){
     }
 }
 arrayChecker();
+
+alert('Thanks for playing! You got ' + totalScore + ' out of 7 correct!');
